@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# Candidate Search
 
 ## Expanding the ESLint configuration
 
