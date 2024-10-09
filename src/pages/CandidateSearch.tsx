@@ -52,7 +52,7 @@ const CandidateSearch = () => {
   }
 
   useEffect(() => {
-    gitHubCandidateSearch(currentUser.login || "")
+    // gitHubCandidateSearch(currentUser.login || "")
     gitHubSearch();
   }, []);
 
