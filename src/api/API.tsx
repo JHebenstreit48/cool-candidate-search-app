@@ -10,7 +10,9 @@ const searchGithub = async () => {
         },
       }
     );
-    // console.log('Response:', response);
+    console.log(import.meta.env.VITE_GITHUB_TOKEN);
+    
+    console.log('Response:', response);
     const data = await response.json();
     if (!response.ok) {
       throw new Error('invalid API response, check the network tab');
