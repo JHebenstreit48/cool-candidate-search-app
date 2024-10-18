@@ -1,10 +1,13 @@
-import { CandidateList } from "../components/CandidatesList";
+import { Candidates } from "../components/CandidatesList";
 
 export default function CandidateSearch() {
+
+  return (
     <div>
       <div>
         <h1>Candidate Search</h1>
-        <CandidateList />
+        <Candidates />
       </div>
     </div>
+  );
 };

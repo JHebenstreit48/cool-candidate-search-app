@@ -2,14 +2,14 @@ import { useEffect, useState } from 'react';
 import { searchGithub, searchGithubUser } from '../api/API';
 import type { Candidate } from '../interfaces/Candidate.interface';
 
- export const CandidateList = () => {
+export const Candidates = () => {
   const [candidates, setCandidates] = useState<Candidate[]>([]);
   const [username, setUsername] = useState<Candidate>({
     id: null,
+    name: null,
     login: null,
     email: null,
     html_url: null,
-    name: null,
     avatar_url: null,
     bio: null,
     company: null,
@@ -26,6 +26,7 @@ import type { Candidate } from '../interfaces/Candidate.interface';
   };
 
   const gitHubSearch = async () => {
+    console.log('hello');
     const gitHubAPIData = await searchGithub();
     console.log(gitHubAPIData);
     setCandidates(gitHubAPIData);
@@ -55,25 +56,36 @@ import type { Candidate } from '../interfaces/Candidate.interface';
   }, []);
 
   const handleNextCandidate = () => {
-    userData(true);
+    userData(false);
   };
-console.log(candidates);
-if (candidates.length === 0) {
-  return <div>Loading...</div>;
-}
+  console.log(candidates);
+  if (candidates.length === 0) {
+    return <div>Loading...</div>;
+  }
+  function saveCandidate() {
+    userData(true);
+  }
 
-return (
-  <div>
-    <ul>
+  return (
+    <div className='CandidateList'>
+      <ul>
         <li>
-            <img src={username.avatar_url ?? ''} alt="avatar" />
-            <h2>{username.name}</h2>
-            <h3>{username.login}</h3>
-            <p>{username.email}</p>
-            <a href=""></a>
+          <img src={username.avatar_url ?? ''} alt="avatar" />
+          <p>{username.id}</p>
+          <p>{username.name}</p>
+          <p>{username.login}</p>
+          <p>{username.email}</p>
+          <p>{username.html_url}</p>
+          <p>{username.avatar_url}</p>
+          <p>{username.bio}</p>
+          <p>{username.company}</p>
+          <p>{username.location}</p>
+          <p>{username.blog}</p>
+          <a href=""></a>
         </li>
-    </ul>
-    <button onClick={handleNextCandidate}>Next Candidate</button>
-  </div>
-);
+      </ul>
+      <button onClick={handleNextCandidate}>Next Candidate</button>
+      <button onClick={saveCandidate}>SavedCandidate</button>
+    </div>
+  );
 };
