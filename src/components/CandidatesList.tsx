@@ -5,16 +5,14 @@ import type { Candidate } from '../interfaces/Candidate.interface';
 export const Candidates = () => {
   const [candidates, setCandidates] = useState<Candidate[]>([]);
   const [username, setUsername] = useState<Candidate>({
-    id: null,
     name: null,
     login: null,
+    location: null,
+    avatar_url: null,
     email: null,
     html_url: null,
-    avatar_url: null,
-    bio: null,
     company: null,
-    location: null,
-    blog: null,
+    bio: null
   });
 
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -68,22 +66,15 @@ export const Candidates = () => {
 
   return (
     <div className='CandidateList'>
-      <ul>
-        <li>
           <img src={username.avatar_url ?? ''} alt="avatar" />
-          <p>{username.id}</p>
-          <p>{username.name}</p>
-          <p>{username.login}</p>
-          <p>{username.email}</p>
-          <p>{username.html_url}</p>
-          <p>{username.avatar_url}</p>
-          <p>{username.bio}</p>
-          <p>{username.company}</p>
-          <p>{username.location}</p>
-          <p>{username.blog}</p>
+          <p>Username: {username.login}</p>
+          <p>Name: {username.name}</p>
+          <p>Location: {username.location}</p>
+          <p>E-Mail: {username.email}</p>
+          <p>GitHub: {username.html_url}</p>
+          <p>Company: {username.company}</p>   
+          <p>Bio: {username.bio}</p>   
           <a href=""></a>
-        </li>
-      </ul>
       <button onClick={handleNextCandidate}>Next Candidate</button>
       <button onClick={saveCandidate}>SavedCandidate</button>
     </div>
