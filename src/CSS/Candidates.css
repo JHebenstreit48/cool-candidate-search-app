@@ -1,0 +1,27 @@
+.CandidateList {
+  box-shadow: 0 0 10px 7px rgb(29, 231, 22);
+  padding: 2rem;
+  background-color: black;
+  border-radius: 1rem;
+}
+.userAvatar {
+  border: 3px solid rgb(9, 229, 245);
+  box-shadow: 0 0 8px 3px rgb(9, 229, 245);
+}
+
+.fa-circle-plus {
+  color: green;
+  font-size: 4rem;
+  background: none;
+  padding: 0;
+  margin-left: 5rem;
+  border: 1px solid transparent;
+}
+
+.fa-circle-minus {
+  color: red;
+  font-size: 4rem;
+  background: none;
+  padding: 0;
+  border: 1px solid transparent;
+}
