@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background: linear-gradient(
+    180deg,
+    rgb(32, 44, 136) 0%,
+    #090979 15%,
+    rgba(0, 2, 18, 1) 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+    button {
+      background-color: #f9f9f9;
+    }
+  }
+  
+  main {
+    color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  tr {
+    border-radius: 10px;
+    background-color: #000;
+    color: white;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #333333;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-item {
+    padding: 0 0.5rem;
+    list-style: none;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .active {
+    font-weight: 700;
+  }
+  
+  .table {
+    width: 80vw;
+    table-layout: fixed;
+  }

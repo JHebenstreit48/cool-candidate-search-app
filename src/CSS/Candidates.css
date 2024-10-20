@@ -3,6 +3,9 @@
   padding: 2rem;
   background-color: black;
   border-radius: 1rem;
+  text-align: center;
+  font-family: "Inter Tight", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
 }
 .userAvatar {
   border: 3px solid rgb(9, 229, 245);
