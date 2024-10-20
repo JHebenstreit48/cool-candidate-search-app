@@ -16,7 +16,10 @@
 
 ## Installation
 
-N/A
+Deployed Site: https://cool-candidate-search-app.onrender.com/
+
+[Home Page](./src/assets/Images/Home-Page.png),
+[Potential Candidates](./src/assets/Images/Potential-Candidates-Page.png)
 
 ## Usage
 
