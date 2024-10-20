@@ -1,0 +1,16 @@
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 0 5rem;
+}
+
+.nav-link {
+    color: rgb(9, 229, 245);
+    text-decoration: none;
+}
+
+.nav-link.active {
+    color: rgb(29, 231, 22);
+}

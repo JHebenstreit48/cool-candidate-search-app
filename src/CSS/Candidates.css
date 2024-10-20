@@ -7,6 +7,7 @@
 .userAvatar {
   border: 3px solid rgb(9, 229, 245);
   box-shadow: 0 0 8px 3px rgb(9, 229, 245);
+  width: 20rem;
 }
 
 .fa-circle-plus {
