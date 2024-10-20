@@ -31,6 +31,16 @@ Sort through a list of candidates and save potential candidates/new hires.
 [.length Google Search](https://www.google.com/search?q=what+does+.length+do+in+javascript&oq=what+does+.length+do+in+JavaScript&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyCggBEAAYDxgWGB4yCAgCEAAYFhgeMggIAxAAGBYYHjINCAQQABiGAxiABBiKBTINCAUQABiGAxiABBiKBTINCAYQABiGAxiABBiKBdIBCDg5ODZqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8),
 [? Ternary Operator](https://www.google.com/search?q=what+does+the+ternary+operator+of+%3F+do+in+JavaSCRIPT&sca_esv=f377f8634278135a&ei=cugSZ4mqIYLhwN4PmceMmAo&ved=0ahUKEwiJq_eahJmJAxWCMNAFHZkjA6MQ4dUDCBA&uact=5&oq=what+does+the+ternary+operator+of+%3F+do+in+JavaSCRIPT&gs_lp=Egxnd3Mtd2l6LXNlcnAiNHdoYXQgZG9lcyB0aGUgdGVybmFyeSBvcGVyYXRvciBvZiA_IGRvIGluIEphdmFTQ1JJUFQyBhAAGBYYHjILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIESIKmAVCCB1iIogFwEXgBkAEAmAGHAaAB7TSqAQUzMy4zNbgBA8gBAPgBAZgCVaAC_zeoAhPCAhMQABiABBhDGLQCGIoFGOoC2AEBwgIUEAAYgAQY4wQYtAIY6QQY6gLYAQHCAhYQABgDGLQCGOUCGOoCGIwDGI8B2AECwgIWEC4YAxi0AhjlAhjqAhiMAxiPAdgBAsICChAAGIAEGEMYigXCAg0QABiABBixAxhDGIoFwgILEAAYgAQYkQIYigXCAgUQABiABMICBxAAGIAEGArCAgcQLhiABBgKwgINEAAYgAQYsQMYgwEYCsICBxAAGIAEGA3CAhAQABiABBixAxiDARiKBRgNwgILEAAYgAQYsQMYgwHCAgUQLhiABMICDhAAGIAEGLEDGIMBGIoFwgIIEAAYFhgeGA_CAggQABgWGAoYHsICChAAGAgYDRgeGA_CAgwQABgIGAoYDRgeGA_CAggQABiiBBiJBcICChAAGBYYChgeGA_CAgUQIRigAcICBRAhGKsCwgIFECEYnwWYAwq6BgQIARgHugYGCAIQARgKkgcFNDQuNDGgB_3kAw&sclient=gws-wiz-serp),
 [Window object MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Window/window),
+[Changing Active Item Color](https://stackoverflow.com/questions/68635957/changing-the-color-of-the-active-nav-item-in-reactjs),
+
+Got the following ideas for code from Ruben Dominguez.
+
+```
+{candidates.length > 0 && candidates.map((candidate, index) => {})}
+
+const hasInformation = window.localStorage.getItem('candidates') !== null;
+
+```
 
 README copied and edited from a personal project.
 ## Tests
