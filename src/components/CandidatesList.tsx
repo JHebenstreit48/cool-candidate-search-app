@@ -47,8 +47,8 @@ export const Candidates = () => {
 
   useEffect(() => {
     gitHubSearch();
-  }, []); // Empty dependency array ensures it runs once on component mount
-
+  }, []);
+  
   const handleNextCandidate = async () => {
     if (currentIndex + 1 < candidates.length) {
       setCurrentIndex(currentIndex + 1);
